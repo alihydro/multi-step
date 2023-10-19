@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Poppins:wght@400;700;800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:wght@400;700&family=Roboto:wght@400;700&family=Rubik:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<div class="container">
+<div class="landing-image">
+<div class="nav">
+  <div class="image">
+    <img src="assets/images/bg-sidebar-desktop.svg" alt="">
+  </div>
+  <div class="image-two">
+    <img src="assets/images/bg-sidebar-mobile.svg" alt="">
+  </div>
+  <div class="text">
+    <ul>
+      <li id="your-info">
+        <span class="clicked">1</span>
+        <div>
+          <h1>STEP 1</h1>
+          <h2>YOUR INFO</h2>
+        </div>
+      </li>
+      <li id="your-info">
+        <span >2</span>
+        <div>
+          <h1>STEP 2</h1>
+          <h2> Select plan</h2>
+        </div>
+      </li>
+      <li  id="your-info">
+        <span>3</span>
+        <div>
+          <h1>STEP 3</h1>
+          <h2> Add-ons</h2>
+        </div>
+      </li>
+      <li id="your-info">
+        <span >4</span>
+        <div>
+          <h1>STEP 4</h1>
+          <h2>Summary </h2>
+        </div>
+      </li>
+    
+    </ul>
+  </div>
+</div>
+</div>
+<!-- <div class="sections"> -->
+  <div class="landing">
+<h1>
+  Personal info
+</h1>
+<p>  Please provide your name, email address, and phone number.</p>
+<form>
+  <div class="input-div">
+    <label for="name">Name</label>
+    <span class="commint">filed is reauired</span>
+    <input type="text" id="name" placeholder="e.g. Stephen King">
+  </div>
+  <div class="input-div">
+    <label for="email">Email Address</label>
+    <span class="commint">filed is reauired</span>
+    <input type="text" id="email" placeholder="e.g. stephenking@lorem.com">
+  </div>
+  <div class="input-div">
+    <label for="phone">Phone Number</label>
+    <span class="commint">filed is reauired</span>
+    <input type="text" id="phone" placeholder="e.g. +1 234 567 890">
+  </div>
+</form>
+<button class="septial">Next step</button>
+</div>
+<div class="landing-two">
+  <h1>
+    Select your plan
+  </h1>
+  <p>  You have the option of monthly or yearly billing.</p>
+  <p class="boxs-p">Please select your baggage.</p>
+ <div class="boxs">
+ 
+  <div class="box">
+    <div class="icon">
+      <img src="assets/images/icon-arcade.svg" alt="">
+    </div>
+    <h1>arcade</h1>
+    <span >$9/mo</span>
+    <div class="Yearly">
+      <span>$90/yr</span>
+      <p>2 years free</p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="icon">
+      <img src="assets/images/icon-advanced.svg" alt="">
+    </div>
+    <h1>Advanced</h1>
+    <span>$12/mo</span>
+    <div class="Yearly">
+      <span>$120/yr</span>
+      <p>2 years free</p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="icon">
+      <img src="assets/images/icon-pro.svg" alt="">
+    </div>
+    <h1> Pro</h1>
+    <span>$12/mo</span>
+    <div class="Yearly">
+      <span>$150/yr</span>
+      <p>2 years free</p>
+    </div>
+  </div>
+ </div>
+ <div class="box-offer">
+ <h4 id="monthly" class="color">monthly</h4>  <div><span></span></div> <h4 id="Yearly">Yearly</h4>
+ </div>
+ <div class="buttons">
+  <span id="span">go Back</span>
+  <button>Next step</button>
+  </div>
+  </div>
+<div class="landing-three">
+  <h1>
+    Pick add-ons
+  </h1>
+  <p> Add-ons help enhance your gaming experience.</p>
+<div class="pick-boxs">
+ 
+  <div class="pick-box">
+    <div class="pick-text">
+    <div class="pick-icon"><input type="checkbox" name="" id=""></div>
+    <div class="pick-phrase">
+      <h1> Online service</h1>
+      <p> Access to multiplayer games</p>
+    </div>
+  </div>
+    <div class="price mounthly-price">
+      +$1/mo
+    </div>
+    <div class="price yearly-price">
+      +$10/yr
+    </div>
+  </div>
+ 
+  <div class="pick-box">
+    <div class="pick-text">
+    <div class="pick-icon"><input type="checkbox" name="" id=""></div>
+    <div class="pick-phrase">
+      <h1>  Larger storage</h1>
+      <p> 
+        Extra 1TB of cloud save</p>
+    </div>
+  </div>
+    <div class="price mounthly-price">
+      +$2/mo
+    </div>
+    <div class="price yearly-price">
+      +$20/yr
+    </div>
+  </div>
+ 
+  <div class="pick-box">
+    <div class="pick-text">
+    <div class="pick-icon"><input type="checkbox" name="" id=""></div>
+    <div class="pick-phrase">
+      <h1>  Customizable Profile</h1>
+      <p> 
+        Custom theme on your profile</p>
+    </div>
+  </div>
+    <div class="price mounthly-price">
+      +$2/mo
+    </div>
+    <div class="price yearly-price">
+      +$20/yr
+    </div>
+  </div>
+</div>
+<div class="buttons">
+  <span id="span">go Back</span>
+  <button>Next step</button>
+  </div>
+  </div>
+<div class="landing-four">
+  <h1>
+    Finishing up
+  </h1>
+  <p>  Double-check everything looks OK before confirming.</p>
+
+  <div class="boxs-finish">
+    <div class="box-finish-one">
+      <div>
+  <p>arcade(monthly)</p>
+  <a href="#" id="Change">Change</a>
+</div>
+<span></span>
+
+    </div>
+    <div class="box-finish online">
+      <div>
+  <p>online service</p>
+</div>
+<span>$1/mo</span>
+    </div>
+    <div class="box-finish larger">
+      <div>
+  <p>larger storage</p>
+</div>
+<span></span>
+    </div>
+    <div class="box-finish Profile">
+      <div>
+  <p>Customizable Profile</p>
+</div>
+<span>$2/mo</span>
+    </div>
+  </div>
+  <div class="box-finish-out">
+    <div>
+<p > Total (per/year)</p>
+</div>
+<span id="Total">$12/mo</span>
+  </div>
+  <div class="buttons">
+  <span id="span">go Back</span>
+  <button class="Confirm">Confirm</button>
+</div>
+  </div>
+  <div class="thenks">
+    <img src="assets/images/icon-thank-you.svg" alt="">
+    <h1>  Thank you!</h1>
+    <p> Thanks for confirming your subscription! We hope you have fun 
+      using our platform. If you ever need support, please feel free 
+      to email us at support@loremgaming.com.</p>
+  </div>
+</div>
+<!-- </div> -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- 
+
+ Sidebar start -->
+
+
+  <!-- Sidebar end -->
+
+  <!-- Step 1 start -->
+
+  <!-- 
+
+
+
+ 
+
+
+
+
+
+  Next Step -->
+
+  <!-- Step 1 end -->
+
+  <!-- Step 2 start -->
+
+  <!-- 
+ 
+
+  Arcade
+  $9/mo
+
+  
+  $12/mo
+
+ 
+  $15/mo
+
+  Monthly
+  Yearly
+
+  Go Back
+  Next Step -->
+
+  <!-- Step 2 end -->
+
+  <!-- Step 3 start -->
+
+  <!-- 
+  
+
+ 
+  
+
+
+  +$2/mo
+
+
+  +$2/mo
+
+  Go Back
+  Next Step -->
+
+  <!-- Step 3 end -->
+
+  <!-- Step 4 start -->
+<!-- 
+
+  -->
+
+  <!-- Dynamically add subscription and add-on selections here -->
+<!-- 
+ 
+
+  Go Back
+   -->
+
+  <!-- Step 4 end -->
+
+  <!-- Step 5 start -->
+<!-- 
+
+
+ 
+
+  <!-- Step 5 end -->
+<!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> --> 
